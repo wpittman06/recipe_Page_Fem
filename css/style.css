@@ -1,0 +1,86 @@
+@import url("/css/global/boilerplate.css");
+@import url("/css/global/fonts.css");
+
+body {
+    background-color: var(--color-stone-100);
+}
+
+.recipe-container{
+    max-width: 900px;
+    margin-inline: auto;
+    background-color: #fff;
+   
+}
+
+.recipe-container div:not(:first-child) {
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: 'young serif', serif;
+    color: var(--color-stone-900);
+}
+
+p, li {
+    color: var(--color-stone-600);
+}
+
+li {
+    margin-top: .5rem;
+}
+
+.recipe-instruction_container {
+    border-top: 1px solid hsl(30, 18%, 87%);;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    border-style: none none solid none;
+}
+
+th, td {
+  text-align: left;
+  font-weight: 400;
+  padding: .5rem 0;
+}
+
+td {
+    font-weight: 700;
+    color: var(--color-brown-800);
+}
+
+.recipe-meta_container {
+    background-color: var( --color-rose-50);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+}
+
+.recipe-meta {
+    color: var(--color-rose-800);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 768px) {
+    .recipe-container {
+        margin: 2rem auto 0;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+}
